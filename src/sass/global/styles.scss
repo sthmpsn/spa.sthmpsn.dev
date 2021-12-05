@@ -1,0 +1,28 @@
+// Global font - Poppins Font
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap'); 
+
+// Import custom Global Styles
+@import './color-variables';
+@import './animations';
+@import './accessibility';
+
+
+// Import BS functions and variables in order to utilize them in "color-custom-theme" file
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+// Import Bootstrap 5 Styles
+@import "~bootstrap/scss/bootstrap";
+
+
+
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+

@@ -1,0 +1,11 @@
+$skills-proficient-color: radial-gradient(circle at top right, $orange-light,$orange);
+$skills-intermediate-color: radial-gradient(circle at top right, $purple-light,$purple);
+$skills-advance-color: radial-gradient(circle at top right, $success-light, $success);
+
+
+// Skills Orbit Controls
+$orbitPathScale-lg: 2.1;
+$orbitPathScale-sm: 1.7;
+$orbitAngle: 70deg;
+$skillImgScale: .5;
+$spinRate: 30s;
