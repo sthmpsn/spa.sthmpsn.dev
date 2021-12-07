@@ -1,0 +1,63 @@
+
+[
+    {
+        "name": "tryathlete",
+        "title": "TryAthlete",
+        "subtitle": "Push Yourself, Pull For Everyone",
+        "desc": "Track and Monitor your Tri-Athlete training with friends",
+        "repo_url": "https://github.com/sthmpsn/TryAthlete",
+        "app_url":"https://my-try-athlete.herokuapp.com",
+        "img_url":"assets/images/projects/proj-tryathlete.jpg",
+        "skills": ["HTML", "JavaScript", "CSS", "React", "MongoDb"]
+    },
+    {
+        "name": "gifflix",
+        "title": "GifFlix",
+        "subtitle": "A watered down Netflix for Giphy",
+        "desc": "Search the Giphy DB. Click a Gif to pause/play it",
+        "repo_url": "https://github.com/sthmpsn/Gifflix",
+        "app_url":"https://gifflix.sthmpsn.dev",
+        "img_url":"assets/images/projects/proj-gifflix.jpg",
+        "skills": ["HTML", "JavaScript", "CSS"]
+    },
+    {
+        "name": "memory-game",
+        "title": "Memory Click Game",
+        "subtitle": "Simpsons Edition",
+        "desc": "Simple but fun Simpson's themed memory click game",
+        "repo_url": "https://github.com/sthmpsn/clicky-game",
+        "app_url":"https://sthmpsn.github.io/clicky-game",
+        "img_url":"assets/images/projects/proj-clicky.jpg",
+        "skills": ["HTML", "JavaScript", "CSS"]
+    },
+    {
+        "name": "cyoa",
+        "title": "Choose Your Own Adventure!",
+        "subtitle": "Coding Bootcamp Edition",
+        "desc": "",
+        "repo_url": "https://github.com/sthmpsn/Web-Dev-Alliance",
+        "app_url":"https://cyoa-bc.herokuapp.com",
+        "img_url":"assets/images/projects/proj-cyoa.jpg",
+        "skills": ["HTML", "JavaScript", "CSS"]
+    },
+    {
+        "name": "rpg",
+        "title": "RPG Game",
+        "subtitle": "Star Wars Edition",
+        "desc": "",
+        "repo_url": "https://github.com/sthmpsn/StarWars-RPG",
+        "app_url":"https://sthmpsn.github.io/StarWars-RPG",
+        "img_url":"assets/images/projects/proj-rpg.jpg",
+        "skills": ["HTML", "JavaScript", "CSS"]
+    },
+    {
+        "name": "lirr-train",
+        "title": "LIRR Train Schedule",
+        "subtitle": "The Long Island Rairoad",
+        "desc": "Long Island Railroad Train Schedule Mock",
+        "repo_url": "https://github.com/sthmpsn/Train-Schedule",
+        "app_url":"https://sthmpsn.github.io/Train-Schedule",
+        "img_url":"assets/images/projects/proj-trainSchedule.jpg",
+        "skills": ["HTML", "JavaScript", "CSS"]
+    }
+]

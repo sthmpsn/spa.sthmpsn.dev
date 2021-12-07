@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper d-md-flex bg-light text-secondary">
     <navbar/>
-    <main class="container">
-      <about/>
+    <main class="container overflow-auto">
+      <router-view/>
     </main>
   </div>
 

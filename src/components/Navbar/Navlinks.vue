@@ -2,16 +2,32 @@
   <div class="collapse navbar-collapse mt-3" id="navbarNav">
     <ul class="navbar-nav d-flex-md flex-column">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">About</a>
+        <router-link 
+          to="/about"
+          class="nav-link active">
+          About
+        </router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
+        <router-link 
+          to="/portfolio"
+          class="nav-link">
+          Portfolio
+        </router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <router-link 
+          to="/contact"
+          class="nav-link">
+          Contact
+        </router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Skills</a>
+        <router-link 
+          to="/skills"
+          class="nav-link">
+          Skills
+        </router-link>
       </li>
     </ul>
   </div>

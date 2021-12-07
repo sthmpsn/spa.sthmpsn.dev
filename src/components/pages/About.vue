@@ -1,12 +1,12 @@
 <template>
-    <div class="row mt-5">
+    <div class="row h-100 align-items-center">
         <div class="col text-center">
-            <h2 class="fw-bold">
+            <h2 class="fw-bold mb-5">
                 <span class="">Web Developer</span>
                 <div>&amp;</div>
                 <span class="">Experienced IT Professional</span>
             </h2>
-            <div class="row my-4">
+            <div class="row my-5">
                 <p class="col-7 mx-auto fs-5 text-justify">
                     I'm a Full Stack Web Developer who enjoys taking ideas and
                     turning them into reality. My curiosity for how things work
@@ -15,7 +15,7 @@
                     has allowed me to rapidly understand new concepts and apply them.
                 </p>
             </div>
-            <aside class="">
+            <aside>
                 <h2 class="sr-only">View Steve's Resume</h2>
                 <a
                     class="btn btn-lg btn-outline-primary"
