@@ -4,7 +4,7 @@
       <li class="nav-item">
         <router-link 
           to="/about"
-          class="nav-link active">
+          class="nav-link">
           About
         </router-link>
       </li>

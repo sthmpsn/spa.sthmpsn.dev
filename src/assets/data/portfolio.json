@@ -6,8 +6,8 @@
         "subtitle": "Push Yourself, Pull For Everyone",
         "desc": "Track and Monitor your Tri-Athlete training with friends",
         "repo_url": "https://github.com/sthmpsn/TryAthlete",
-        "app_url":"https://my-try-athlete.herokuapp.com",
-        "img_url":"assets/images/projects/proj-tryathlete.jpg",
+        "app_url": "https://my-try-athlete.herokuapp.com",
+        "img_url": "proj-tryathlete.jpg",
         "skills": ["HTML", "JavaScript", "CSS", "React", "MongoDb"]
     },
     {
@@ -16,8 +16,8 @@
         "subtitle": "A watered down Netflix for Giphy",
         "desc": "Search the Giphy DB. Click a Gif to pause/play it",
         "repo_url": "https://github.com/sthmpsn/Gifflix",
-        "app_url":"https://gifflix.sthmpsn.dev",
-        "img_url":"assets/images/projects/proj-gifflix.jpg",
+        "app_url": "https://gifflix.sthmpsn.dev",
+        "img_url": "proj-gifflix.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
     },
     {
@@ -26,28 +26,28 @@
         "subtitle": "Simpsons Edition",
         "desc": "Simple but fun Simpson's themed memory click game",
         "repo_url": "https://github.com/sthmpsn/clicky-game",
-        "app_url":"https://sthmpsn.github.io/clicky-game",
-        "img_url":"assets/images/projects/proj-clicky.jpg",
+        "app_url": "https://sthmpsn.github.io/clicky-game",
+        "img_url": "proj-clicky.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
     },
     {
         "name": "cyoa",
         "title": "Choose Your Own Adventure!",
         "subtitle": "Coding Bootcamp Edition",
-        "desc": "",
+        "desc": "A CYOA game that presents you with different paths to completing your coding Bootcamp",
         "repo_url": "https://github.com/sthmpsn/Web-Dev-Alliance",
-        "app_url":"https://cyoa-bc.herokuapp.com",
-        "img_url":"assets/images/projects/proj-cyoa.jpg",
+        "app_url": "https://cyoa-bc.herokuapp.com",
+        "img_url": "proj-cyoa.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
     },
     {
         "name": "rpg",
         "title": "RPG Game",
         "subtitle": "Star Wars Edition",
-        "desc": "",
+        "desc": "Star Wars Theme'd Role playing game",
         "repo_url": "https://github.com/sthmpsn/StarWars-RPG",
-        "app_url":"https://sthmpsn.github.io/StarWars-RPG",
-        "img_url":"assets/images/projects/proj-rpg.jpg",
+        "app_url": "https://sthmpsn.github.io/StarWars-RPG",
+        "img_url": "proj-rpg.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
     },
     {
@@ -56,8 +56,8 @@
         "subtitle": "The Long Island Rairoad",
         "desc": "Long Island Railroad Train Schedule Mock",
         "repo_url": "https://github.com/sthmpsn/Train-Schedule",
-        "app_url":"https://sthmpsn.github.io/Train-Schedule",
-        "img_url":"assets/images/projects/proj-trainSchedule.jpg",
+        "app_url": "https://sthmpsn.github.io/Train-Schedule",
+        "img_url": "proj-trainSchedule.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
     }
 ]

@@ -1,19 +1,39 @@
 <template>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-xxl-2 g-4">
         <div class="col" v-for="project in projects" :key="project.name">
-            <div class="card h-100 shadow">
-                <div class="card-body">
-                    <div class="card-title">{{ project.title }}</div>
-                    <div class="card-subtitle mb-2 text-muted small">{{ project.subtitle }}</div>
-                    <img :src="project.img_url" :alt="project.title + image" class="img-fluid portfolio-project-images rounded">
-                    <div class="card-text">{{ project.desc }}</div>
-                    <div class="mt-3 ">
-                        <div>Tech Used:</div>
-                        <span class="d-inline-block mx-1 badge rounded-pill bg-secondary fw-light" v-for="skill in project.skills" :key="project.name + '-' + skill"> {{ skill }}</span>
+            <div class="card mx-auto shadow">
+                <div class="row g-0 h-100">
+                    <div class="col-md-5">
+                        <img :src="require(`../../assets/images/projects/${project.img_url}`)" class="img-fluid rounded-start h-100" :alt="project.title + ' image'">
                     </div>
-                    <div class="my-4 text-center">
-                        <a :href="project.repo_url" class="card-link btn btn-outline-primary" target="_blank">Github Repo</a>
-                        <a :href="project.app_url" class="card-link btn btn-outline-primary" target="_blank">Go to App</a>
+                    <div class="col-md-7">
+                        <div class="card-body h-100 d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title">{{ project.title }}</h5>
+                                    <div class="card-subtitle mb-2 text-muted small">{{ project.subtitle }}</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col card-text">
+                                    {{ project.desc }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col card-text small d-flex flex-wrap align-items-center">
+                                    <span class="small fw-bold">Tags</span><span class="d-inline-block m-1 badge rounded-pill bg-secondary fw-light" v-for="skill in project.skills" :key="project.name + '-' + skill">
+                                        {{ skill }}
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- TODO: Create animation that flips the card and makes these buttons accessible on the other side -->
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <a :href="project.repo_url" class="card-link btn btn-outline-primary" target="_blank">Github Repo</a>
+                                    <a :href="project.app_url" class="card-link btn btn-outline-primary" target="_blank">Go to App</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -22,7 +42,9 @@
 </template>
 
 <script>
-import projects from '../../assets/data/portfolio.json';
+import projects from '@/assets/data/portfolio.json';
+
+
 
 export default {
     name: "portfolio",

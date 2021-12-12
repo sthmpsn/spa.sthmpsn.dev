@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper d-md-flex bg-light text-secondary">
     <navbar/>
-    <main class="container overflow-auto">
+    <main class="container overflow-auto p-4">
       <router-view/>
     </main>
   </div>

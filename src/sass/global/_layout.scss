@@ -2,6 +2,7 @@ body {
     scroll-behavior: smooth;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
+    overflow: hidden;
 }
 
 #app, .wrapper {
@@ -15,9 +16,20 @@ body {
                 font-size: 1.2rem;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+                border: 1px solid #fff;
+                margin: 1rem 0;
+                padding: 10px;
+                text-align: center;
 
-                &.active {
-                    color: map-get($theme-colors, 'warning');
+                &:hover, &.router-link-active:hover {
+                    background-color: $warning;
+                    color: $primary;
+                    font-weight: bold;
+                    border: none;
+                }
+
+                &.router-link-active {
+                    color: $warning;
                     font-weight: 600;
                 }
             }

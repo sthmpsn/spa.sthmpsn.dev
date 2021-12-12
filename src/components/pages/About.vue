@@ -11,7 +11,7 @@
                     I'm a Full Stack Web Developer who enjoys taking ideas and
                     turning them into reality. My curiosity for how things work
                     combined with my experience as an IT Professional that 
-                    specialized in deploying and integration SDLC applications
+                    specialized in rapidly deploying and integration SDLC applications
                     has allowed me to rapidly understand new concepts and apply them.
                 </p>
             </div>
