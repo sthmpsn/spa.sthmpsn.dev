@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid d-flex-md flex-md-column m-4 mb-auto">
+    <div class="container-fluid d-lg-flex flex-lg-column m-4 mb-auto">
       <navbrand />
       <navbar-toggler/>
       <navlinks/>

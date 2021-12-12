@@ -7,7 +7,7 @@
                 <span class="">Experienced IT Professional</span>
             </h2>
             <div class="row my-5">
-                <p class="col-7 mx-auto fs-5 text-justify">
+                <p class="col-lg-7 mx-auto fs-5 text-justify">
                     I'm a Full Stack Web Developer who enjoys taking ideas and
                     turning them into reality. My curiosity for how things work
                     combined with my experience as an IT Professional that 
