@@ -1,12 +1,17 @@
 <template>
+    <div class="row my-4">
+        <div class="col text-center">
+            <h1 class="heading">Portfolio</h1>
+        </div>
+    </div>
     <div class="row row-cols-1 row-cols-xxl-2 g-4">
         <div class="col" v-for="project in projects" :key="project.name">
-            <div class="card mx-auto shadow">
+            <div class="card mx-auto shadow mb-3">
                 <div class="row g-0 h-100">
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <img :src="require(`../../assets/images/projects/${project.img_url}`)" class="img-fluid rounded-start h-100" :alt="project.title + ' image'">
                     </div>
-                    <div class="col-md-7">
+                    <div class="d-none d-sm-block col-sm-7">
                         <div class="card-body h-100 d-flex flex-column justify-content-between">
                             <div class="row">
                                 <div class="col">

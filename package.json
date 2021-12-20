@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "cleanstatic": "rimraf public/assets/static",
+    "copystatic": "copyfiles -a -V -u 1 ./src/assets/static/** public",
+    "serve": "npm run cleanstatic && npm run copystatic && vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.2",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.12"
@@ -17,6 +20,8 @@
     "@vue/cli-plugin-router": "^4.5.15",
     "@vue/cli-service": "^4.5.15",
     "@vue/compiler-sfc": "^3.0.0",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^2.7.1",
     "sass": "^1.44.0",
     "sass-loader": "^8.0.2"
   }

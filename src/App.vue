@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper d-lg-flex bg-light text-secondary">
+  <div class="wrapper d-lg-flex text-secondary">
     <navbar/>
     <main class="container overflow-auto p-4">
       <router-view/>

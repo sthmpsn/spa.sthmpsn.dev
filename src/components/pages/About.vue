@@ -1,5 +1,10 @@
 <template>
-    <div class="row h-100 align-items-center">
+    <div class="row my-4">
+        <div class="col text-center">
+            <h1 class="heading">About Me</h1>
+        </div>
+    </div>
+    <div class="row mt-5">
         <div class="col text-center">
             <h2 class="fw-bold mb-5">
                 <span class="">Web Developer</span>
@@ -18,8 +23,8 @@
             <aside>
                 <h2 class="sr-only">View Steve's Resume</h2>
                 <a
-                    class="btn btn-lg btn-outline-primary"
-                    href="../../assets/docs/SteveThompson-resume.pdf"
+                    class="btn btn-lg btn-outline-primary shadow"
+                    href="./assets/static/docs/SteveThompson-resume.pdf"
                     target="_blank"
                     >View Resume</a
                 >
