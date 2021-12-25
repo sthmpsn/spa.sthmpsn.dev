@@ -87,37 +87,29 @@
         
         <!-- START Skills Chart-->
         <div id="skills-chart" class="row my-4">
-            <div class="row">
-                <div class="col skill-legend">
-                    <div class="row">
-                        <div class="col legend-advance text-center">
-                            <div class="legend-title">Advance</div>
-                            <span class="legend-icon">A</span>
-                        </div>
-                        <div class="col legend-intermediate text-center">
-                            <div class="legend-title">Intermediate</div>
-                            <span class="legend-icon">I</span>
-                        </div>
-                        <div class="col legend-proficient text-center">
-                            <div class="legend-title">Proficient</div>
-                            <span class="legend-icon">P</span>
-                        </div>
-                    </div>
+            <div id="skill-legend" class="row">
+                <div class="col advance text-center">
+                    <div class="title">Advance</div>
+                    <span class="icon">A</span>
+                </div>
+                <div class="col intermediate text-center">
+                    <div class="title">Intermediate</div>
+                    <span class="icon">I</span>
+                </div>
+                <div class="col proficient text-center">
+                    <div class="title">Proficient</div>
+                    <span class="icon">P</span>
                 </div>
             </div>
 
             <!-- LEFT OFF HERE -->
-            <div class="row">
-                <div class="col">
-                    <!-- Place skill in json file - make component after styling looks correct -->
+            <div class="row row-cols-4 g-3">
+                <div class="col d-flex align-items-center justify-content-center" v-for="skill in skills" :key="skill.name">
+                    <div class="px-3">{{ skill.name}}</div>
+                    <div class="px-3">{{ skill.level}}</div>
                 </div>
             </div>
         </div>
-
-        
-
-
-
 
 
         <!-- Turn into component -->
@@ -161,8 +153,15 @@
 </template>
 
 <script>
+import skills from '@/assets/data/skills.json';
+
 export default {
     name: "skills",
+    data() {
+        return {
+            skills
+        };
+    }
 };
 </script>
 

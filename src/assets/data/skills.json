@@ -1,0 +1,70 @@
+[
+    {
+        "name": "HTML",
+        "level": "A"
+    },
+    {
+        "name": "CSS",
+        "level": "A"
+    },
+    {
+        "name": "Problem Solving",
+        "level": "A"
+    },
+    {
+        "name": "JavaScript",
+        "level": "A"
+    },
+    {
+        "name": "jQuery",
+        "level": "A"
+    },
+    {
+        "name": "Bootstrap",
+        "level": "A"
+    },
+    {
+        "name": "Sass",
+        "level": "A"
+    },
+    {
+        "name": "PHP",
+        "level": "I"
+    },
+    {
+        "name": "NodeJS",
+        "level": "I"
+    },
+    {
+        "name": "SQL",
+        "level": "I"
+    },
+    {
+        "name": "Git",
+        "level": "I"
+    },
+    {
+        "name": "Design",
+        "level": "I"
+    },
+    {
+        "name": "noSQL",
+        "level": "P"
+    },
+    {
+        "name": "ReactJS",
+        "level": "P"
+    },
+    {
+        "name": "UX",
+        "level": "P"
+    },
+    {
+        "name": "Unit Testing",
+        "level": "P"
+    },
+    {
+        "name": "WordPress",
+        "level": "P"
+    }
+]

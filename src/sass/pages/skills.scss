@@ -16,51 +16,46 @@ $spinRate: 30s;
 
 // Skills Chart
 #skills-chart{
-    .skill-legend {
-        // display: flex;
-        // justify-content: space-between;
-        // text-align: center;
-        // margin: 4em -20px 1.5em -20px;
-        // padding: 1.5em 20px;
-        // background-color: $skills-banner-color;
-        // color: $secondary;
-        // position: sticky;
-        // top: 0;
-    }
+    #skill-legend {
 
-    .legend-title {
-        margin-bottom: 1rem;
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
-
-    .legend-icon {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 42px;
-        border-radius: 50%;
-        color: $white;
-        font-size: 1.2rem;
-    }
-
-    .legend-advance {
-        .legend-icon {
-            background-image: $skills-advance-color;
+        .title {
+            margin-bottom: 1rem;
+            font-weight: 500;
+            font-size: 1.5rem;
         }
+    
+        .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 42px;
+            border-radius: 50%;
+            color: $white;
+            font-size: 1.2rem;
+        }
+    
+        .advance {
+            .icon {
+                background-image: $skills-advance-color;
+            }
+        }
+    
+        .intermediate{ 
+            .icon {
+                background-image: $skills-intermediate-color;
+            }
+        }
+    
+        .proficient{ 
+            .icon {
+                background-image: $skills-proficient-color;
+            }
+        }
+
+
     }
 
-    .legend-intermediate{ 
-        .legend-icon {
-            background-image: $skills-intermediate-color;
-        }
-    }
-
-    .legend-proficient{ 
-        .legend-icon {
-            background-image: $skills-proficient-color;
-        }
-    }
+    
 
 }
 
