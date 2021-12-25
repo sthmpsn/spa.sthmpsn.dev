@@ -1,7 +1,10 @@
+@import '../global/color-variables';
+
 $skills-proficient-color: radial-gradient(circle at top right, $orange-light,$orange);
 $skills-intermediate-color: radial-gradient(circle at top right, $purple-light,$purple);
 $skills-advance-color: radial-gradient(circle at top right, $success-light, $success);
 
+$skills-banner-color: #0B6AB0;
 
 // Skills Orbit Controls
 $orbitPathScale-lg: 2.1;
@@ -9,3 +12,102 @@ $orbitPathScale-sm: 1.7;
 $orbitAngle: 70deg;
 $skillImgScale: .5;
 $spinRate: 30s;
+
+
+// Skills Chart
+#skills-chart{
+    .skill-legend {
+        // display: flex;
+        // justify-content: space-between;
+        // text-align: center;
+        // margin: 4em -20px 1.5em -20px;
+        // padding: 1.5em 20px;
+        // background-color: $skills-banner-color;
+        // color: $secondary;
+        // position: sticky;
+        // top: 0;
+    }
+
+    .legend-title {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .legend-icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 1.2rem;
+    }
+
+    .legend-advance {
+        .legend-icon {
+            background-image: $skills-advance-color;
+        }
+    }
+
+    .legend-intermediate{ 
+        .legend-icon {
+            background-image: $skills-intermediate-color;
+        }
+    }
+
+    .legend-proficient{ 
+        .legend-icon {
+            background-image: $skills-proficient-color;
+        }
+    }
+
+}
+
+
+
+#education {
+    .certs{
+        width: 190px;
+        height: 100px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .mba-icon {
+            font-size: 2rem;
+            // line-height: 0;
+            position: absolute;
+            top: -7px;
+            right: 0px;
+            transform: rotate(27deg) scaleX(-1);
+            color: #b99c00;
+        }
+
+        .mba-text {
+            font-size: 3rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .mba-sub-text {
+            position: relative;
+            top: -12px;
+            left: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
