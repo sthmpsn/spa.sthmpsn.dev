@@ -13,7 +13,6 @@
 import Navbar from './components/Navbar/Navbar.vue';
 import About from './components/pages/About.vue';
 
-
 export default {
   name: 'App',
   components: {

@@ -103,10 +103,19 @@
             </div>
 
             <!-- LEFT OFF HERE -->
-            <div class="row row-cols-4 g-3">
-                <div class="col d-flex align-items-center justify-content-center" v-for="skill in skills" :key="skill.name">
-                    <div class="px-3">{{ skill.name}}</div>
-                    <div class="px-3">{{ skill.level}}</div>
+            <div id="skill-list" class="row row-cols-4 g-3 justify-content-center">
+                <div class="col bg-white rounded mx-3 p-3" v-for="skill in skills" :key="skill.name">
+                    <div class="row d-flex align-items-center justify-content-center text-center">
+                        <div class="col-8 title px-3">{{ skill.name}}</div>
+                        <!-- Need to configure the icon background color -->
+                        <div
+                            class="col-4 icon px-3"
+                            :class="skill.level == 'A' ? 'advance'
+                                                        : skill.level == 'I' ? 'intermediate' : 'proficient'"
+                        >
+                            <span class="icon">{{ skill.level}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,35 +125,41 @@
         <div id="education" class="row my-4 p-4">
             <h3>Certs and Degrees</h3>
             <div class="row justify-content-around">
-                <div class="certs">
+                <div 
+                    class="certs d-flex align-items-center justify-content-center"
+                    data-bs-toggle="tooltip"
+                    title="Master of Business Administration"
+                >
+                    <div class="mba-wrapper position-relative">
+                        <i class="mba-icon bi bi-mortarboard-fill"></i>
+                        <abbr class="mba-text">MBA</abbr
+                        >
+                        <span class="mba-sub-text d-block small">Info Technology</span>
+                    </div>
+                </div>
+                <div class="certs" data-bs-toggle="tooltip" title="University of Minnesota Full Stack Bootcamp">
+                    <img
+                        :src="require(`../../assets/images/certs/uOfM-Fullstack.png`)"
+                        alt="University of Minnesota Full Stack Bootcamp certificate"
+                    />
+                </div>
+                <div class="certs d-flex align-items-center" data-bs-toggle="tooltip" title="Comptia Security +">
                     <img
                         :src="require(`../../assets/images/certs/Security+_CE.jpg`)"
                         alt="Security Plus Cert"
                     />
                 </div>
-                <div class="certs">
+                <div class="certs d-flex align-items-center" data-bs-toggle="tooltip" title="Comptia Network +">
                     <img
                         :src="require(`../../assets/images/certs/Network+_CE.jpg`)"
                         alt="Network Plus Cert"
                     />
                 </div>
-                <div class="certs">
+                <div class="certs d-flex align-items-center" data-bs-toggle="tooltip" title="Information Technology Infrastructure Library - Foundations version 3">
                     <img
                         :src="require(`../../assets/images/certs/ITIL-v3.jpg`)"
                         alt="ITIL Cert"
-                        title="Information Technology Infrastructure Library - Foundations version 3"
                     />
-                </div>
-                <div class="certs d-flex align-items-center justify-content-center">
-                    <div class="mba-wrapper position-relative">
-                        <i class="mba-icon bi bi-mortarboard-fill"></i>
-                        <abbr
-                            class="mba-text"
-                            title="Master of Business Administration"
-                            >MBA</abbr
-                        >
-                        <span class="mba-sub-text d-block small">Info Technology</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -154,6 +169,8 @@
 
 <script>
 import skills from '@/assets/data/skills.json';
+import { Tooltip } from 'bootstrap/dist/js/bootstrap.esm.min.js'; //Bootstrap Tooltips
+
 
 export default {
     name: "skills",
@@ -161,6 +178,13 @@ export default {
         return {
             skills
         };
+    },
+    mounted() {
+        // Enable for all tooltips in this component
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new Tooltip(tooltipTriggerEl)
+        })
     }
 };
 </script>
