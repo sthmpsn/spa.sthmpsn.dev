@@ -1,6 +1,6 @@
 <template>
   <div class="collapse navbar-collapse mt-3 w-100 justify-content-center" id="navbarNav">
-    <ul class="navbar-nav d-flex-lg flex-column w-100">
+    <ul class="navbar-nav d-flex-lg flex-column w-100 align-items-center">
       <li class="nav-item">
         <router-link 
           to="/about"
