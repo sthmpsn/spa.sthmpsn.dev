@@ -118,27 +118,33 @@
                 </div>
             </div> -->
             <!-- <div class="container"> -->
-                <div id="skill-list" class="row my-4">
-                    <div 
-                        class="col" 
-                        :class="skill.level == 'A' ? 'advance'
-                                : skill.level == 'I' ? 'intermediate' : 'proficient'"
-                        v-for="skill in skills" :key="skill.name"
-                    >
-                        <div class="card mb-3 p-4 mx-auto" style="width: 300px;">
-                            <div class="row g-0">
-                                <div class="col-md-8 title text-center">
-                                    {{ skill.name }}
-                                </div>
-                                <div class="col-md-4 text-center my-auto">
-                                    <div class="card-body icon p-0">
-                                        {{ skill.level }}
-                                    </div>
+            <div id="skill-list" class="row my-4">
+                <div
+                    class="col"
+                    :class="
+                        skill.level == 'A'
+                            ? 'advance'
+                            : skill.level == 'I'
+                            ? 'intermediate'
+                            : 'proficient'
+                    "
+                    v-for="skill in skills"
+                    :key="skill.name"
+                >
+                    <div class="card mb-3 p-4 mx-auto" style="width: 300px">
+                        <div class="row g-0">
+                            <div class="col-md-8 title text-center">
+                                {{ skill.name }}
+                            </div>
+                            <div class="col-md-4 text-center my-auto">
+                                <div class="card-body icon p-0">
+                                    {{ skill.level }}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <!-- </div> -->
         </div>
 
@@ -218,7 +224,7 @@
 
 <script>
 import skills from "@/assets/data/skills.json";
-import { Tooltip } from "bootstrap/dist/js/bootstrap.esm.min.js"; //Bootstrap Tooltips
+import { Tooltip } from "bootstrap"; //Bootstrap Tooltips
 
 export default {
     name: "skills",
@@ -229,12 +235,10 @@ export default {
     },
     mounted() {
         // Enable for all tooltips in this component
-        let tooltipTriggerList = [].slice.call(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        );
-        tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new Tooltip(tooltipTriggerEl);
-        });
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+            .forEach(el => new Tooltip(el))
+
+
     },
 };
 </script>
