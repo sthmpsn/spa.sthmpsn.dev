@@ -1,10 +1,7 @@
 console.log("Contact.js has loaded");
 
-// Start - On Document Load
-document.addEventListener("DOMContentLoaded", function(event) { 
 
-    // VARIABLES
-
+function init(){
     // Reset Form Button Element
     const btnResetFrm = document.getElementById("btn-reset-form");
 
@@ -16,12 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("frm-contact").reset();
     });
 
+}
 
 
-
-
-
-});
-// End - On Document Loaded
-
-
+export {init};

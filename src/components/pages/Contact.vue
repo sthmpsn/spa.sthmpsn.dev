@@ -94,7 +94,7 @@
 </template>
 
 <script>
-import "@/js/pages/contact.js"
+import { init } from "@/js/pages/contact.js";
 import { Tooltip } from "bootstrap"; //Bootstrap Tooltips
 
 
@@ -106,6 +106,8 @@ export default {
         [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
             .forEach(el => new Tooltip(el))
 
+        // Initialize form reset button
+        init();
     },
 };
 </script>
