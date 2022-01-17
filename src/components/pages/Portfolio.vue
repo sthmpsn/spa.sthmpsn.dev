@@ -24,15 +24,6 @@
                 </div>
                 <h2 class="project-title bg-white w-100 m-0 text-center">{{ project.title }}</h2>
             </div>
-            
-            <!-- <div class="card mx-auto shadow mb-3">
-                            <div class="row">
-                                <div class="col d-flex justify-content-center">
-                                    <a :href="project.repo_url" class="card-link btn btn-outline-primary" target="_blank">Github Repo</a>
-                                    <a :href="project.app_url" class="card-link btn btn-outline-primary" target="_blank">Go to App</a>
-                                </div>
-                            </div>
-            </div> -->
         </div>
     </div>
 </template>
