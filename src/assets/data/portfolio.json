@@ -1,16 +1,6 @@
 
 [
     {
-        "name": "tryathlete",
-        "title": "TryAthlete",
-        "subtitle": "Push Yourself, Pull For Everyone",
-        "desc": "Track and Monitor your Tri-Athlete training with friends",
-        "repo_url": "https://github.com/sthmpsn/TryAthlete",
-        "app_url": "https://my-try-athlete.herokuapp.com",
-        "img_url": "proj-tryathlete.jpg",
-        "skills": ["HTML", "JavaScript", "CSS", "React", "MongoDb"]
-    },
-    {
         "name": "gifflix",
         "title": "GifFlix",
         "subtitle": "A watered down Netflix for Giphy",
@@ -19,6 +9,16 @@
         "app_url": "https://gifflix.sthmpsn.dev",
         "img_url": "proj-gifflix.jpg",
         "skills": ["HTML", "JavaScript", "CSS"]
+    },
+    {
+        "name": "tryathlete",
+        "title": "TryAthlete",
+        "subtitle": "Push Yourself, Pull For Everyone",
+        "desc": "Track and Monitor your Tri-Athlete training with friends",
+        "repo_url": "https://github.com/sthmpsn/TryAthlete",
+        "app_url": "https://my-try-athlete.herokuapp.com",
+        "img_url": "proj-tryathlete.jpg",
+        "skills": ["HTML", "JavaScript", "CSS", "React", "MongoDb"]
     },
     {
         "name": "memory-game",

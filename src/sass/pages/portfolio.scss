@@ -1,10 +1,55 @@
-.card {
-    max-width: 600px;
-    height: 250px;
-}
 
-img.portfolio-images {
-    width: 220px;
-    height: 275px;
+.project-wrapper {
+	width: 500px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+
+    &:hover .caption {
+        transform: translateY(0);
+    }
+
+    &:hover img {
+        transform: translateY(100%);
+    }
+
+    img {
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all 0.5s;
+        background-color: black;
+        transform: translateY(-100%);
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+    }
+
+    .project-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
 }
 

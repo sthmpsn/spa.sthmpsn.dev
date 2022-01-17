@@ -10,7 +10,7 @@
     <div class="row">
         <form
             id="frm-contact"
-            class="col-6 mx-auto p-4 border rounded text-white"
+            class="col-lg-8 col-xl-6 mx-auto p-4 border rounded text-white"
             action="https://formspree.io/xdozgnnw"
             method="POST"
         >
@@ -51,7 +51,10 @@
                 <div id="frmTxtAreaMsgError"></div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-outline-warning px-4">
+                <button id="btn-reset-form" type="button" class="btn btn-outline-warning px-4 mx-2" data-bs-toggle="tooltip" title="Reset Form">
+                    Reset
+                </button>
+                <button type="submit" class="btn btn-outline-warning px-4 mx-2">
                     Send
                 </button>
             </div>
@@ -61,7 +64,7 @@
     
     <!-- START Social Media -->
     <div class="row my-4">
-        <div class="col-6 mx-auto p-4 d-flex align-items-center justify-content-around">
+        <div class="col-md-8 col-lg-6 mx-auto p-4 d-flex align-items-center justify-content-around">
             <a href="https://github.com/sthmpsn" target="_blank">
                 <div class="github-container">
                     <i class="social-icon github bi bi-github"></i>
@@ -91,8 +94,19 @@
 </template>
 
 <script>
+import "@/js/pages/contact.js"
+import { Tooltip } from "bootstrap"; //Bootstrap Tooltips
+
+
 export default {
     name: "contact",
+
+    mounted() {
+        // Enable for all tooltips in this component
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+            .forEach(el => new Tooltip(el))
+
+    },
 };
 </script>
 

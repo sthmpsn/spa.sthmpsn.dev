@@ -244,5 +244,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/pages/skills";
+    @import "../../sass/pages/skills";
 </style>

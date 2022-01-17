@@ -17,16 +17,16 @@
       </li>
       <li class="nav-item">
         <router-link 
-          to="/contact"
+          to="/skills"
           class="nav-link">
-          Contact
+          Skills
         </router-link>
       </li>
       <li class="nav-item">
         <router-link 
-          to="/skills"
+          to="/contact"
           class="nav-link">
-          Skills
+          Contact
         </router-link>
       </li>
     </ul>
