@@ -4,8 +4,20 @@
             <h1 class="heading">Portfolio</h1>
         </div>
     </div>
+    <div class="row my-4">
+        <div class="col-6 mx-auto">
+            <label for="project-tag-search" class="form-label fw-bold">Project Tag/Skill Filter</label>
+            <input 
+                id="project-tag-search" 
+                class="form-control rounded-pill" 
+                type="text" 
+                placeholder="Enter Tag/Skill to Search"
+                v-model="filterValue"
+            />
+        </div>
+    </div>
     <div class="row row-cols-1 row-cols-xxl-2 g-4">
-        <div class="col" v-for="project in projects" :key="project.name">
+        <div class="col" v-for="project in filteredProjects" :key="project.name">
             <div class="project-wrapper mx-auto rounded">
                 <img :src="require(`../../assets/images/projects/${project.img_url}`)" class="h-100" :alt="project.title + ' image'">
                 <div class="caption">
@@ -30,16 +42,42 @@
 
 <script>
 import projects from '@/assets/data/portfolio.json';
+import { computed, reactive, toRefs } from '@vue/reactivity';
 
 
 
 export default {
     name: "portfolio",
-    data() {
-        return {
-            projects
-        };
+    setup(){
+        const state = reactive({
+            projects: projects,
+            filterValue: "",
+            filteredProjects: computed(()=> updateProjects())
+        })
+
+        function updateProjects(){
+            // If filterValue is FALSY just list all the projects
+            if(!state.filterValue){
+                console.log("Default Projects: ", state.projects);
+                return state.projects;
+            }
+
+            // TODO: If filterValue has a value then match if the project tags match and list that project
+            //          Need to investigate how to handle this since the skills property is an array 
+            // ...in the mean time currently allow filtering for project name.
+            
+            return state.projects.filter((project) => project.name.toLowerCase().includes(state.filterValue.toLowerCase()));
+
+        }
+
+        return {...toRefs(state)}
+
     },
+    // data() {
+    //     return {
+    //         projects
+    //     };
+    // },
 };
 </script>
 
