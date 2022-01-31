@@ -8,17 +8,7 @@
         "repo_url": "https://github.com/sthmpsn/Gifflix",
         "app_url": "https://gifflix.sthmpsn.dev",
         "img_url": "proj-gifflix.jpg",
-        "skills": ["HTML", "JavaScript", "CSS"]
-    },
-    {
-        "name": "tryathlete",
-        "title": "TryAthlete",
-        "subtitle": "Push Yourself, Pull For Everyone",
-        "desc": "Track and Monitor your Tri-Athlete training with friends",
-        "repo_url": "https://github.com/sthmpsn/TryAthlete",
-        "app_url": "https://my-try-athlete.herokuapp.com",
-        "img_url": "proj-tryathlete.jpg",
-        "skills": ["HTML", "JavaScript", "CSS", "React", "MongoDb"]
+        "skills": ["HTML", "JavaScript", "CSS", "Bootstrap", "jQuery", "Ajax", "API"]
     },
     {
         "name": "memory-game",
@@ -28,7 +18,7 @@
         "repo_url": "https://github.com/sthmpsn/clicky-game",
         "app_url": "https://sthmpsn.github.io/clicky-game",
         "img_url": "proj-clicky.jpg",
-        "skills": ["HTML", "JavaScript", "CSS"]
+        "skills": ["HTML", "JavaScript", "CSS", "React", "React-Bootstrap"]
     },
     {
         "name": "cyoa",
@@ -38,7 +28,17 @@
         "repo_url": "https://github.com/sthmpsn/Web-Dev-Alliance",
         "app_url": "https://cyoa-bc.herokuapp.com",
         "img_url": "proj-cyoa.jpg",
-        "skills": ["HTML", "JavaScript", "CSS"]
+        "skills": ["HTML", "JavaScript", "CSS", "Bootstrap", "jQuery", "Node", "Express", "Sequelize", "JawsDB", "Heroku"]
+    },
+    {
+        "name": "tryathlete",
+        "title": "TryAthlete",
+        "subtitle": "Push Yourself, Pull For Everyone",
+        "desc": "Track and Monitor your Tri-Athlete training with friends",
+        "repo_url": "https://github.com/sthmpsn/TryAthlete",
+        "app_url": "https://my-try-athlete.herokuapp.com",
+        "img_url": "proj-tryathlete.jpg",
+        "skills": ["HTML", "JavaScript", "CSS", "Node", "Express", "React", "React-Bootstrap", "MongoDb", "Mongoose"]
     },
     {
         "name": "rpg",
@@ -48,7 +48,7 @@
         "repo_url": "https://github.com/sthmpsn/StarWars-RPG",
         "app_url": "https://sthmpsn.github.io/StarWars-RPG",
         "img_url": "proj-rpg.jpg",
-        "skills": ["HTML", "JavaScript", "CSS"]
+        "skills": ["HTML", "JavaScript", "CSS", "jQuery", "Bootstrap"]
     },
     {
         "name": "lirr-train",
@@ -58,6 +58,6 @@
         "repo_url": "https://github.com/sthmpsn/Train-Schedule",
         "app_url": "https://sthmpsn.github.io/Train-Schedule",
         "img_url": "proj-trainSchedule.jpg",
-        "skills": ["HTML", "JavaScript", "CSS"]
+        "skills": ["HTML", "JavaScript", "CSS", "Bootstrap", "jQuery", "Firebase", "Moment.js"]
     }
 ]

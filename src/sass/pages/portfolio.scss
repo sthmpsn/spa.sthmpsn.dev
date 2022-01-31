@@ -53,3 +53,19 @@
 
 }
 
+
+@media screen and (max-width: 600px){
+    .project-wrapper {
+        width: 100%;
+        height: 320px;
+
+        .project-subtitle {
+            font-size: 0.8rem;
+        }
+
+        .project-desc {
+            font-size: 0.6rem;
+        }
+    }
+}
+

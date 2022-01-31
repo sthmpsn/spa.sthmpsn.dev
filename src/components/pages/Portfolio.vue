@@ -4,7 +4,8 @@
             <h1 class="heading">Portfolio</h1>
         </div>
     </div>
-    <div class="row my-4">
+    <!-- TODO: Future Enhancement to allow searching of tags/skills-->
+    <!-- <div class="row my-4">
         <div class="col-6 mx-auto">
             <label for="project-tag-search" class="form-label fw-bold">Project Tag/Skill Filter</label>
             <input 
@@ -15,7 +16,7 @@
                 v-model="filterValue"
             />
         </div>
-    </div>
+    </div> -->
     <div class="row row-cols-1 row-cols-xxl-2 g-4">
         <div class="col" v-for="project in filteredProjects" :key="project.name">
             <div class="project-wrapper mx-auto rounded">
@@ -24,7 +25,7 @@
                     <h2 class="card-title">{{ project.title }}</h2>
                     <div class="project-subtitle mb-2 text-muted h4">{{ project.subtitle }}</div>
                     <div class="project-desc mb-2 text-muted small text-center">{{ project.desc }}</div>
-                    <div class="my-3 small d-flex flex-wrap align-items-center">
+                    <div class="m-3 small d-flex flex-wrap align-items-center">
                         <span class="small fw-bold">Tags</span><span class="d-inline-block m-1 badge rounded-pill bg-secondary fw-light" v-for="skill in project.skills" :key="project.name + '-' + skill">
                             {{ skill }}
                         </span>
@@ -34,7 +35,7 @@
                         <a :href="project.app_url" class="card-link btn btn-outline-light" target="_blank">Go to App</a>
                     </div>
                 </div>
-                <h2 class="project-title bg-white w-100 m-0 text-center">{{ project.title }}</h2>
+                <h2 class="h4 project-title bg-white w-100 m-0 text-center upp">{{ project.title }}</h2>
             </div>
         </div>
     </div>
@@ -72,12 +73,7 @@ export default {
 
         return {...toRefs(state)}
 
-    },
-    // data() {
-    //     return {
-    //         projects
-    //     };
-    // },
+    }
 };
 </script>
 
