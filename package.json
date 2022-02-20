@@ -5,7 +5,7 @@
   "scripts": {
     "cleanstatic": "rimraf public/assets/static",
     "copystatic": "copyfiles -a -V -u 1 ./src/assets/static/** public",
-    "serve": "npm run cleanstatic && npm run copystatic && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
@@ -20,8 +20,6 @@
     "@vue/cli-plugin-router": "^4.5.15",
     "@vue/cli-service": "^4.5.15",
     "@vue/compiler-sfc": "^3.0.0",
-    "copyfiles": "^2.4.1",
-    "rimraf": "^2.7.1",
     "sass": "^1.44.0",
     "sass-loader": "^8.0.2"
   }
