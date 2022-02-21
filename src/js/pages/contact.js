@@ -1,4 +1,4 @@
-console.log("Contact.js has loaded");
+console.log("contact.js has loaded");
 
 
 function init(){
