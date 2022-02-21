@@ -30,6 +30,15 @@ const routes = [
         name: 'skills',
         component: Skills
     },
+    {
+        // path: "*",
+        path: "/:catchAll(.*)",
+        name: "NotFound",
+        component: About,
+        meta: {
+            requiresAuth: false
+        }
+    }
 
 ];
 
