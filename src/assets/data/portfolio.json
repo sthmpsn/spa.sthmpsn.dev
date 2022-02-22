@@ -16,7 +16,7 @@
         "subtitle": "Simpsons Edition",
         "desc": "Simple but fun Simpson's themed memory click game",
         "repo_url": "https://github.com/sthmpsn/clicky-game",
-        "app_url": "https://sthmpsn.github.io/clicky-game",
+        "app_url": "https://clickygame.sthmpsn.dev",
         "img_url": "proj-clicky.jpg",
         "skills": ["HTML", "JavaScript", "CSS", "React", "React-Bootstrap"]
     },
